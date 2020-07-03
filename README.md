@@ -1,11 +1,11 @@
 # StarRatingView
 StarRatingView is a simple Star Rating View for displaying and entering star ratings, written for iOS in Swift 5.1 (UIKit, not SwiftUI)
 
-##Installation
+## Installation
 Copy the 3 files to your XCode projects
 
-##Usage
-###Through Interface Builder
+## Usage
+### Through Interface Builder
 1. Add a UIView to your interface
 2. In the Identiy Inspector, change Class to StarRatingView
 3. In the Attributes Inspector you can now set:
@@ -14,7 +14,7 @@ Copy the 3 files to your XCode projects
  * the **Star Rounding** Raw Value - *IBInspectable can't handle enums, hence the raw value, see ENUM code below*
 4. By checking **User Interaction Enabled** users can touch the view to enter a star rating. The rating updates while touching.
 
-###Through Code
+### Through Code
 1. Create an instance of StarRatingView  
 `let starRatingView = StarRatingView(frame: CGRect(origin: .zero, size: CGSize(width: 250, height: 50)), rating: 3.5, color: UIColor.systemOrange, starRounding: .roundToHalfStar)`  
 Natural aspect ratio is 5 width to 1 height. 
@@ -25,7 +25,7 @@ Natural aspect ratio is 5 width to 1 height.
  * `starRatingView.starRounding` (type: `StarRounding`)
  * `starRatingView.isUserInteractionEnabled` (type: `Bool`)
 
-###StarRounding ENUM
+### StarRounding ENUM
 <code>
 public enum StarRounding: Int {  
   case roundToHalfStar = 0  
