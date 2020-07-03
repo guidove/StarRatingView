@@ -26,14 +26,14 @@ Natural aspect ratio is 5 width to 1 height.
  * `starRatingView.isUserInteractionEnabled` (type: `Bool`)
 
 ## The StarRounding ENUM
-`public enum StarRounding: Int {  
-  case roundToHalfStar = 0  
-  case ceilToHalfStar = 1  
-  case floorToHalfStar = 2  
-  case roundToFullStar = 3  
-  case ceilToFullStar = 4  
-  case floorToFullStar = 5  
-}`
+`public enum StarRounding: Int {`  
+`  case roundToHalfStar = 0`  
+`  case ceilToHalfStar = 1`  
+`  case floorToHalfStar = 2`  
+`  case roundToFullStar = 3`  
+`  case ceilToFullStar = 4`  
+`  case floorToFullStar = 5`  
+`}`
 
 ## Comments
 * The stars are SF Symbols and as such resize automatically without loosing image quality
