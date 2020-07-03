@@ -1,7 +1,7 @@
 # StarRatingView
 StarRatingView is a simple Star Rating View for displaying star ratings and entering them (by touching the stars). It's written for iOS, in Swift 5.1 (UIKit, not SwiftUI). It also works with Interface Builder
 
-![Alt text](/relative/path/to/img.jpg?raw=true "StarRatingView in InterfaceBuilder")
+![Alt text](starRatingViewInIntefaceBuilder.png?raw=true "StarRatingView in InterfaceBuilder")
 
 ## Installation
 Copy the 3 files to your XCode projects
