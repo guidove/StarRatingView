@@ -7,12 +7,12 @@ Copy the 3 files to your XCode projects
 ## Usage
 ### Through Interface Builder
 1. Add a UIView to your interface
-2. In the Identiy Inspector, change Class to StarRatingView
+2. In the Identiy Inspector, change Class to `StarRatingView`
 3. In the Attributes Inspector you can now set:
  * the **rating** (Float between 0 and 5)
  * the **star color**
  * the **Star Rounding** Raw Value - *IBInspectable can't handle enums, hence the raw value, see ENUM code below*
-4. By checking **User Interaction Enabled** users can touch the view to enter a star rating. The rating updates while touching.
+4. By checking **User Interaction Enabled** users can touch the view to enter a star rating. The rating stars updates while touching.
 
 ### Through Code
 1. Create an instance of StarRatingView  
@@ -25,14 +25,18 @@ Natural aspect ratio is 5 width to 1 height.
  * `starRatingView.starRounding` (type: `StarRounding`)
  * `starRatingView.isUserInteractionEnabled` (type: `Bool`)
 
-### StarRounding ENUM
-<code>
-public enum StarRounding: Int {  
+## The StarRounding ENUM
+`public enum StarRounding: Int {  
   case roundToHalfStar = 0  
   case ceilToHalfStar = 1  
   case floorToHalfStar = 2  
   case roundToFullStar = 3  
   case ceilToFullStar = 4  
   case floorToFullStar = 5  
-}  
-</code>
+}`
+
+## Comments
+* The stars are SF Symbols and as such resize automatically without loosing image quality
+* Feel free to use in your projects. A mention would be appreciated. 
+* Feel free to clone, download, create pull requests etc. I'm open to expanding functionality and improving where necessary (i'm not an expert)
+
